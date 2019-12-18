@@ -8,11 +8,17 @@ Start pact broker as docker containers
 
 
 $ cd contract-pact-springboot
+
+
+
 $ docker-compose up -d
 
 
 
 Run maven build to publish the pacts to the pact broker
+
+
+
 cd pact-contract-consumer
 mvn clean install pact:publish -Dpact.broker.url=http://localhost:8500
 
